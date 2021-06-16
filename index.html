@@ -11,18 +11,68 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/f74fe2c694.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <!-- Header -->
     <header>
       <img src="images/logo/Reservia.svg" alt="logo reservia" />
       <nav>
-        <a>Hébergements</a>
-        <a>Activités</a>
+        <a class="navLink">Hébergements</a>
+        <a class="navLink">Activités</a>
       </nav>
-      <a><strong>S'inscrire</strong></a>
+      <a class="inscription navLink"><strong>S'inscrire</strong></a>
     </header>
-    <main></main>
+    <!--Main-->
+    <main>
+      <section id="searchBlock">
+        <h1>Trouvez votre hébergement pour des vancances de rêve</h1>
+        <p>En plein centre ville ou en pleine nature</p>
+        <form>
+          <label><i class="fas fa-map-marker-alt mapIcone"></i></label>
+          <input type="search" placeholder="Marseille, France" />
+          <button>Recherche</button>
+          <!-- <button class="buttonMobile"><i class="fas fa-search"></i></button> -->
+        </form>
+        <div>
+          <ul>
+            <h2>Filtres</h2>
+            <li>
+              <a href="#">
+                <div class="filterIcon">
+                  <i class="fas fa-money-bill-wave"></i>
+                </div>
+                Économiques
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="filterIcon"><i class="fas fa-child"></i></div>
+                Familial
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="filterIcon"><i class="fas fa-heart"></i></div>
+                Romantique
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="filterIcon"><i class="fas fa-dog"></i></div>
+                Animaux autorisés
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="infoParagraph">
+          <div class="iconInfo"><i class="fas fa-info"></i></div>
+          <p>Plus de 500 logements sont disponibles dans cette ville</p>
+        </div>
+      </section>
     <footer></footer>
   </body>
 </html>

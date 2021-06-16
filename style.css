@@ -7,17 +7,117 @@ a {
   text-decoration: none;
   color: black;
 }
+header {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  grid-template-areas: "a . c b";
+  align-items: center;
+}
+header img {
+  grid-area: a;
+}
+.inscription {
+  grid-area: b;
+}
+nav {
+  grid-area: c;
+}
+.navLink {
+  border-top: 4px solid transparent;
+  font-size: 1rem;
+  padding: 50px 25px;
+}
+.navLink:hover {
+  border-top: 4px solid #0065fc;
+  color: #0065fc;
+}
+.mapIcone {
+  border-color: transparent;
+}
 /* HEADER */
 
-nav {
+/* nav {
   display: flex;
   text-align: center;
 }
 
 .navLink:hover {
   color: #0065fc;
-}
+} */
 
 .inscription {
   color: #0065fc;
+}
+
+/* Partie recherche */
+#searchBlock h1 {
+  margin: 0;
+  font-size: 1.3rem;
+}
+form {
+  border-radius: 15px;
+  border: 1px solid transparent;
+  display: flex;
+  flex-direction: row;
+}
+form > * {
+  border: 1px solid #f2f2f2;
+  padding: 15px;
+  margin: 0;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+input::placeholder {
+  color: black;
+  opacity: 1;
+}
+
+label {
+  border-radius: 15px 0 0 15px;
+  background-color: #f2f2f2;
+}
+
+.mapIcone {
+  border-color: transparent;
+}
+
+button {
+  background-color: #0065fc;
+  color: white;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+#searchBlock h2 {
+  font-size: 1rem;
+  padding-right: 25px;
+}
+
+#searchBlock ul {
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+  font-size: 1rem;
+}
+
+#searchBlock a {
+  margin: 10px 15px 10px 0;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0 15px 0 0;
+  border: 2px solid #d9d9d9;
+  border-radius: 30px;
+  font-weight: bold;
+  color: black;
+}
+
+#searchBlock a:hover {
+  border: 2px solid #f2f2f2;
+  background-color: #0065fc;
+  color: white;
+  transition: 0.3s;
 }
