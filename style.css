@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+/* HEADER */
+
+nav {
+  display: flex;
+  text-align: center;
+}
+
+.navLink:hover {
+  color: #0065fc;
+}
+
+.inscription {
+  color: #0065fc;
+}
