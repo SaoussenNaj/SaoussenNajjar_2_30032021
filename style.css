@@ -1,5 +1,5 @@
 body {
-  margin: 0;
+  margin: 0 auto;
   font-family: "Raleway", sans-serif;
 }
 
@@ -120,4 +120,36 @@ button {
   background-color: #0065fc;
   color: white;
   transition: 0.3s;
+}
+.filterIcon {
+  margin-right: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  transform: scale(1.11);
+  background-color: #deebff;
+  border-radius: 50%;
+  color: #0065fc;
+}
+.infoParagraph {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+.infoParagraph p {
+  margin: 0;
+}
+.iconInfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  font-size: 0.7rem;
+  border: 1px solid #d9d9d9;
+  border-radius: 50%;
+  margin-right: 5px;
+  color: #0065fc;
 }
