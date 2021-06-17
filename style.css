@@ -222,3 +222,73 @@ button {
 .starGris {
   color: lightgray;
 }
+
+/* Section populaire */
+
+aside {
+  margin: 0;
+  padding: 30px 35px 0 35px;
+  background-color: #f2f2f2;
+}
+
+.asidePopulaire {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.chartLineIcon {
+  font-size: 1.4rem;
+}
+
+/* aside article {
+  background-color: white;
+  border-radius: 25px;
+} */
+
+/* .populaireDivImg {
+  position: relative;
+  overflow: hidden;
+} */
+
+/* .populaireImg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  object-fit: cover;
+} */
+
+/* .populaireInfo {
+  font-size: 0.9rem;
+  display: flex;
+  flex-direction: column;
+} */
+/* 
+.populaireStarList {
+  font-size: 0.6rem;
+} */
+
+/* .asideInfo > div {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 15px;
+} */
+
+/* .populairePrix {
+  margin: 0 5px 0 0;
+} */
+
+/* aside h3 {
+  margin: 5px 5px 5px 0;
+} */
+
+/* aside a {
+  margin: 10px 0 30px 0;
+  border-radius: 25px;
+  display: block;
+  box-shadow: 2px 2px 30px rgb(201, 201, 201), -2px -2px 30px rgb(201, 201, 201);
+} */
