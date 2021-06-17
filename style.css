@@ -187,3 +187,7 @@ button {
   border-radius: 25px;
   box-shadow: 2px 2px 30px rgb(201, 201, 201), -2px -2px 30px rgb(201, 201, 201);
 }
+.starList {
+  margin: 0 0 0 15px;
+  font-size: 0.7rem;
+}
