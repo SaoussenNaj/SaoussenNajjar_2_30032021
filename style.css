@@ -412,3 +412,54 @@ footer li {
 footer div {
   padding: 0 50px;
 }
+/* MediaQueries */
+
+@media screen and (min-width: 1440px) {
+  /*DESKTOP*/
+  body {
+    margin: auto;
+    max-width: 1440px;
+    padding: 0 50px;
+  }
+  aside {
+    width: 420px;
+    border-radius: 30px;
+  }
+  aside article {
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+    height: 145px;
+  }
+  .populaireDivImg {
+    margin-right: 20px;
+    height: 135px;
+    min-width: 35%;
+    border-radius: 20px 0 0 20px;
+  }
+  .asideInfo {
+    height: 135px;
+    justify-content: space-between;
+  }
+  #hebergement {
+    margin: 0 40px 0 0;
+    max-width: 880px;
+    background-color: #f2f2f2;
+  }
+  #hebergement * a {
+    width: 245px;
+  }
+  #activity h2 {
+    padding-left: 30px;
+  }
+  .buttonMobile {
+    display: none;
+  }
+
+  .activityContener figure {
+    margin: 0;
+  }
+  footer div {
+    width: 33.33%;
+  }
+}
