@@ -7,7 +7,21 @@ a {
   text-decoration: none;
   color: black;
 }
-header {
+/* HEADER */
+
+nav {
+  display: flex;
+  text-align: center;
+}
+
+.navLink:hover {
+  color: #0065fc;
+}
+
+.inscription {
+  color: #0065fc;
+}
+/* header {
   display: grid;
   grid-template-columns: auto 1fr auto;
   grid-template-areas: "a . c b";
@@ -36,7 +50,7 @@ nav {
 }
 .inscription {
   color: #0065fc;
-}
+} */
 
 /* Partie recherche */
 #searchBlock h1 {
@@ -151,11 +165,11 @@ button {
   margin: 0;
   padding: 0;
 }
-#hebergement {
+/* #hebergement {
   margin: 0 40px 0 0;
   max-width: 880px;
   background-color: #f2f2f2;
-}
+} */
 #hebergement {
   padding: 30px 15px 40px 40px;
   border-radius: 30px;
@@ -225,15 +239,10 @@ aside {
   margin: 0;
   padding: 30px 35px 0 35px;
   background-color: #f2f2f2;
-  width: 420px;
-  border-radius: 30px;
+  /* width: 420px;
+  border-radius: 30px; */
 }
 
-/* media desktop */
-aside {
-  width: 420px;
-  border-radius: 30px;
-}
 .asidePopulaire {
   display: flex;
   justify-content: space-between;
@@ -248,30 +257,21 @@ aside {
 aside article {
   background-color: white;
   border-radius: 25px;
-  display: flex;
+  /* display: flex;
   align-items: center;
   padding-left: 5px;
-  height: 145px;
+  height: 145px; */
 }
-
-/* media desktop */
-aside article {
-  display: flex;
-  align-items: center;
-  padding-left: 5px;
-  height: 145px;
-}
-
 .populaireDivImg {
   position: relative;
   overflow: hidden;
 }
-.populaireDivImg {
+/* .populaireDivImg {
   margin-right: 20px;
   height: 135px;
   min-width: 35%;
   border-radius: 20px 0 0 20px;
-}
+} */
 
 .populaireImg {
   position: absolute;
@@ -289,7 +289,7 @@ aside article {
 
 .populaireStarList {
   font-size: 0.6rem;
-  margin-top: 50px;
+  /* margin-top: 50px; */
 }
 
 .populaireInfo > div {
@@ -322,7 +322,7 @@ aside a {
   flex-direction: column;
   margin: 40px 0 60px 0;
 }
-.activityContener {
+/* .activityContener {
   display: flex;
   justify-content: space-around;
 }
@@ -337,7 +337,7 @@ aside a {
 }
 .activityMediumBlock {
   height: 220px;
-}
+} */
 #activity h2 {
   margin: 40px 0;
 }
@@ -345,15 +345,15 @@ aside a {
 .activityBlockLeft,
 .activityBlockRight {
   display: flex;
-  justify-content: space-around;
-  width: 50%;
+  /* justify-content: space-around;
+  width: 50%; */
 }
-div[class^="activityColumn"] {
+/* div[class^="activityColumn"] {
   width: 45%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
+} */
 
 .activityDivImg {
   position: relative;
@@ -420,6 +420,30 @@ footer div {
     max-width: 1440px;
     padding: 0 50px;
   }
+  header {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-template-areas: "a . c b";
+    align-items: center;
+  }
+  header img {
+    grid-area: a;
+  }
+  .inscription {
+    grid-area: b;
+  }
+  nav {
+    grid-area: c;
+  }
+  .navLink {
+    border-top: 4px solid transparent;
+    font-size: 1rem;
+    padding: 50px 25px;
+  }
+  .navLink:hover {
+    border-top: 4px solid #0065fc;
+    color: #0065fc;
+  }
   aside {
     width: 420px;
     border-radius: 30px;
@@ -436,7 +460,7 @@ footer div {
     min-width: 35%;
     border-radius: 20px 0 0 20px;
   }
-  .asideInfo {
+  .populaireInfo {
     height: 135px;
     justify-content: space-between;
   }
@@ -451,14 +475,230 @@ footer div {
   #activity h2 {
     padding-left: 30px;
   }
+  .activityContener {
+    display: flex;
+    justify-content: space-around;
+  }
+  .activityXLargeBlock {
+    height: 480px;
+  }
+  .activityLargeBlock {
+    height: 270px;
+  }
+  .activitySmallBlock {
+    height: 170px;
+  }
+  .activityMediumBlock {
+    height: 220px;
+  }
+  div[class^="activityColumn"] {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .activityBlockLeft,
+  .activityBlockRight {
+    justify-content: space-around;
+    width: 50%;
+  }
   .buttonMobile {
     display: none;
   }
-
+  button {
+    border-radius: 0 15px 15px 0;
+  }
   .activityContener figure {
     margin: 0;
   }
   footer div {
     width: 33.33%;
+  }
+}
+@media screen and (max-width: 1439px) and (min-width: 751px) {
+  /*TABLET*/
+  .buttonMobile {
+    display: none;
+  }
+  button {
+    border-radius: 0 15px 15px 0;
+  }
+  .activityContener figure {
+    margin: 0;
+  }
+  footer div {
+    width: 33.33%;
+  }
+  aside article {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 200px;
+    padding: 5px;
+  }
+  .populaireArticleList {
+    display: flex;
+    justify-content: space-between;
+  }
+  aside a {
+    width: 30%;
+  }
+  .populaireDivImg {
+    margin-right: 20px;
+    height: 100%;
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+  }
+  .populaireInfo {
+    height: 45%;
+    padding: 0 10px;
+  }
+  #hebergement article {
+    width: 33.33%;
+  }
+  .activityColumn2,
+  .activityColumn4 {
+    display: flex;
+    justify-content: space-around;
+    width: 66.66%;
+  }
+  .activityColumn1,
+  .activityColumn3 {
+    display: flex;
+    justify-content: space-around;
+    width: 33.33%;
+  }
+  .activityContener {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .activityContener a {
+    display: block;
+    width: 100%;
+  }
+  [class^="activityColumn"] > a:nth-child(1) {
+    margin-right: 40px;
+  }
+  .activityBlockLeft {
+    margin-bottom: 40px;
+  }
+}
+/*TABLET & MOBILE*/
+@media screen and (max-width: 1439px) {
+  .firstBlock {
+    flex-direction: column-reverse;
+  }
+  main section {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  header {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-template-areas: "a . b" "c c c";
+    align-items: center;
+  }
+  header img {
+    grid-area: a;
+    margin-left: 30px;
+  }
+  .inscription {
+    grid-area: b;
+  }
+  nav {
+    grid-area: c;
+  }
+  .navLink.inscription {
+    border-top: 4px solid transparent;
+    font-size: 1rem;
+    padding: 50px 25px;
+  }
+  .inscription:hover {
+    border-top: 4px solid #0065fc;
+  }
+  .navButton {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    width: 50%;
+    border-bottom: 4px solid #f2f2f2;
+  }
+  .navButton:hover {
+    border-bottom: 4px solid #0065fc;
+  }
+  aside {
+    width: auto;
+  }
+  #hebergement {
+    width: auto;
+  }
+  #activity h2 {
+    padding-left: 15px;
+  }
+  .activityContener {
+    padding: 0 15px;
+  }
+  .activityContener figure {
+    height: 200px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  /*MOBILE*/
+  .buttonDesktopTablet {
+    display: none;
+  }
+  form {
+    justify-content: space-between;
+    border: 1px solid #f2f2f2;
+    border-radius: 20px;
+  }
+  input {
+    width: 100%;
+  }
+  .buttonMobile {
+    border-radius: 15px;
+    transform: scale(1.05);
+  }
+  /* .buttonMobile:hover i {
+    transform: scale(1.3);
+    transition: 0.3s;
+  } */
+  aside article {
+    width: auto;
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+    height: 145px;
+  }
+  .populaireDivImg {
+    margin-right: 20px;
+    height: 135px;
+    width: 30%;
+    border-radius: 20px 0 0 20px;
+  }
+  .populaireInfo {
+    height: 135px;
+    justify-content: space-between;
+  }
+  #hebergement article {
+    width: 100%;
+  }
+  #hebergement > div {
+    flex-direction: column;
+  }
+  .activityContener div {
+    justify-content: space-around;
+    flex-direction: column;
+  }
+  .activityContener figure {
+    margin: 0 0 30px 0;
+  }
+  .activityContener {
+    flex-direction: column;
+  }
+  footer {
+    flex-direction: column;
   }
 }
