@@ -356,6 +356,14 @@ aside a {
 .activityBlockLeft,
 .activityBlockRight {
   display: flex;
+  justify-content: space-around;
+  width: 50%;
+}
+div[class^="activityColumn"] {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .activityDivImg {
