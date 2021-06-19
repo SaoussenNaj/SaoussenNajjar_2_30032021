@@ -1,7 +1,7 @@
 body {
   margin: 0 auto;
   font-family: "Raleway", sans-serif;
-  width: 1440px;
+  /* width: 1440px; */
 }
 a {
   text-decoration: none;
@@ -209,7 +209,6 @@ button {
   margin: 0 0 5px 15px;
 }
 #hebergement * a {
-  width: 245px;
   height: 210px;
   background-color: white;
   margin: 10px 25px 25px 0;
