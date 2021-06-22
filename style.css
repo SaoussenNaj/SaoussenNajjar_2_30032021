@@ -62,9 +62,10 @@ button {
   cursor: pointer;
 }
 
-#searchBlock h2 {
+#searchBlock span {
   font-size: 1rem;
   padding-right: 25px;
+  font-weight: bold;
 }
 
 #searchBlock ul {
